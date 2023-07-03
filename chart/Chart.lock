@@ -1,0 +1,6 @@
+dependencies:
+- name: robusta
+  repository: https://robusta-charts.storage.googleapis.com
+  version: 0.10.17
+digest: sha256:57330a74b6364fc8e9056755ad484635553cb63fc7560112e74156a9923d83e4
+generated: "2023-07-03T09:25:36.014266-05:00"

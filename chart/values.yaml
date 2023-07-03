@@ -1,0 +1,23 @@
+robusta:
+  clusterName: foo
+  isSmallCluster: true
+  sinksConfig:
+    - file_sink:
+        name: file_sink
+  runner:
+    image: "foo.dev/repo-foo/robusta-issue:dev"
+  playbookRepos: { }
+  lightActions: [ ]
+  priorityBuiltinPlaybooks: [ ]
+  platformPlaybooks: [ ]
+  customPlaybooks:
+    - triggers:
+        - on_kubernetes_warning_event_create:
+            include: [ "FailedCreate" ]
+      actions:
+        - foo: { }
+  builtinPlaybooks:
+    - triggers:
+        - on_image_pull_backoff: { }
+      actions:
+        - image_pull_backoff_reporter: { }

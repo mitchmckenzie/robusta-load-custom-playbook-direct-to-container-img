@@ -1,0 +1,10 @@
+apiVersion: v2
+name: robusta
+description: Robusta Helm chart for Kubernetes
+type: application
+version: 0.10.17
+appVersion: 0.10.17
+dependencies:
+  - name: robusta
+    version: 0.10.17
+    repository: https://robusta-charts.storage.googleapis.com
