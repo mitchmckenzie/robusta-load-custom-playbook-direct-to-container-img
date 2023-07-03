@@ -15,7 +15,7 @@ used to demonstrate an issue with trying to load a custom playbook from the robu
     make install-robusta
    ```
    
-2. observer error loading custom playbook:
+2. observe error loading custom playbook:
     ```bash
    robusta logs --namespace robusta -f   
    ```
